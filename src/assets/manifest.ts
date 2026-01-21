@@ -24,6 +24,14 @@ const manifest: AssetsManifest = {
             name: startLabel.id,
             assets: [
                 {
+                    alias: "skeleton-data",
+                    src: "https://raw.githubusercontent.com/DRincs-Productions/pixi-vn-bucket/refs/heads/main/spine/zqx_tachie.skel",
+                },
+                {
+                    alias: "skeleton-atlas",
+                    src: "https://raw.githubusercontent.com/DRincs-Productions/pixi-vn-bucket/refs/heads/main/spine/zqx_tachie.atlas",
+                },
+                {
                     alias: "bg01-hallway",
                     src: "https://raw.githubusercontent.com/DRincs-Productions/pixi-vn-bucket/refs/heads/main/breakdown/bg01-hallway.webp",
                 },
