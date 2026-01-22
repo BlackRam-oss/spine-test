@@ -1,7 +1,6 @@
 import { AssetsManifest } from "@drincs/pixi-vn";
 import { MAIN_MENU_ROUTE } from "../constans";
 import secondPart from "../labels/secondPart";
-import startLabel from "../labels/startLabel";
 
 /**
  * Manifest for the assets used in the game.
@@ -21,7 +20,7 @@ const manifest: AssetsManifest = {
         },
         // labels
         {
-            name: startLabel.id,
+            name: "spine",
             assets: [
                 {
                     alias: "skeleton-data",
@@ -30,10 +29,6 @@ const manifest: AssetsManifest = {
                 {
                     alias: "skeleton-atlas",
                     src: "https://raw.githubusercontent.com/DRincs-Productions/pixi-vn-bucket/refs/heads/main/spine/zqx_tachie.atlas",
-                },
-                {
-                    alias: "bg01-hallway",
-                    src: "https://raw.githubusercontent.com/DRincs-Productions/pixi-vn-bucket/refs/heads/main/breakdown/bg01-hallway.webp",
                 },
             ],
         },
