@@ -1,4 +1,4 @@
-import { canvas, ImageSprite, narration } from "@drincs/pixi-vn";
+import { canvas, narration } from "@drincs/pixi-vn";
 import { Box, CircularProgress } from "@mui/joy";
 import Stack from "@mui/joy/Stack";
 import { useQueryClient } from "@tanstack/react-query";
@@ -27,12 +27,6 @@ export default function MainMenu() {
 
     useEffect(() => {
         editHideInterface(false);
-        let bg = new ImageSprite({}, "background_main_menu");
-        bg.load();
-        let layer = canvas.getLayer(CANVAS_UI_LAYER_NAME);
-        if (layer) {
-            layer.addChild(bg);
-        }
 
         return () => {
             canvas.getLayer(CANVAS_UI_LAYER_NAME)?.removeChildren();
