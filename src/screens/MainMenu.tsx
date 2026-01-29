@@ -9,7 +9,7 @@ import { CANVAS_UI_LAYER_NAME, NARRATION_ROUTE } from "../constans";
 import useGameProps from "../hooks/useGameProps";
 import { INTERFACE_DATA_USE_QUEY_KEY } from "../hooks/useQueryInterface";
 import useQueryLastSave from "../hooks/useQueryLastSave";
-import startLabel from "../labels/startLabel";
+import pixijsLabel from "../labels/pixijsLabel";
 import useGameSaveScreenStore from "../stores/useGameSaveScreenStore";
 import useInterfaceStore from "../stores/useInterfaceStore";
 import useSettingsScreenStore from "../stores/useSettingsScreenStore";
@@ -75,7 +75,7 @@ export default function MainMenu() {
                     canvas.removeAll();
                     await navigate(NARRATION_ROUTE);
                     narration
-                        .call(startLabel, gameProps)
+                        .call(pixijsLabel, gameProps)
                         .then(() => queryClient.invalidateQueries({ queryKey: [INTERFACE_DATA_USE_QUEY_KEY] }))
                         .finally(() => setLoading(false));
                 }}
