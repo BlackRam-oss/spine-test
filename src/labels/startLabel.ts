@@ -12,5 +12,8 @@ const startLabel = newLabel("start", [
         console.log("spine", spine);
         canvas.add("spine", spine);
     },
+    async () => {
+        narration.dialogue = { text: `End` };
+    },
 ]);
 export default startLabel;
