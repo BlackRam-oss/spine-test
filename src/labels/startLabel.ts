@@ -11,6 +11,7 @@ const startLabel = newLabel("start", [
         const spine = newSpine({ atlas: "spineAtlas", skeleton: "spineSkeleton" });
         spine.x = canvas.width / 2;
         spine.y = canvas.height;
+        canvas.add("spine", spine);
     },
     async () => {
         narration.dialogue = { text: `End` };
