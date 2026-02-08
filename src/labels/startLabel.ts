@@ -8,7 +8,9 @@ const startLabel = newLabel("start", [
     },
     async () => {
         await Assets.loadBundle("spine");
-        const spine = newSpine({ atlas: "skeleton-atlas", skeleton: "skeleton-data" });
+        const spine = newSpine({ atlas: "spineAtlas", skeleton: "spineSkeleton" });
+        spine.x = canvas.width / 2;
+        spine.y = canvas.height;
         console.log("spine", spine);
         canvas.add("spine", spine);
     },

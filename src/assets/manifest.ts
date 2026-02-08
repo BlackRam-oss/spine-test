@@ -23,12 +23,12 @@ const manifest: AssetsManifest = {
             name: "spine",
             assets: [
                 {
-                    alias: "skeleton-data",
-                    src: "https://raw.githubusercontent.com/DRincs-Productions/pixi-vn-bucket/refs/heads/main/spine/zqx_tachie.skel",
+                    alias: "spineSkeleton",
+                    src: "https://raw.githubusercontent.com/pixijs/spine-v8/main/examples/assets/spineboy-pro.skel",
                 },
                 {
-                    alias: "skeleton-atlas",
-                    src: "https://raw.githubusercontent.com/DRincs-Productions/pixi-vn-bucket/refs/heads/main/spine/zqx_tachie.atlas",
+                    alias: "spineAtlas",
+                    src: "https://raw.githubusercontent.com/pixijs/spine-v8/main/examples/assets/spineboy-pma.atlas",
                 },
             ],
         },
