@@ -1,5 +1,5 @@
 import { Assets, canvas, narration, newLabel } from "@drincs/pixi-vn";
-import { newSpine } from "@drincs/pixi-vn-spine";
+import { Spine } from "@drincs/pixi-vn-spine";
 
 const startLabel = newLabel("start", [
     async () => {
@@ -8,7 +8,7 @@ const startLabel = newLabel("start", [
     },
     async () => {
         await Assets.loadBundle("spine");
-        const spine = newSpine({ atlas: "spineAtlas", skeleton: "spineSkeleton" });
+        const spine = new Spine({ atlas: "spineAtlas", skeleton: "spineSkeleton" });
         spine.x = canvas.width / 2;
         spine.y = canvas.height;
         canvas.add("spine", spine);
