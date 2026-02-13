@@ -14,6 +14,11 @@ const startLabel = newLabel("start", [
         canvas.add("spine", spine);
     },
     async () => {
+        const spine = canvas.find<Spine>("spine");
+        spine?.state.setAnimation(0, "idle", true);
+        narration.dialogue = { text: `Spine animation should be playing` };
+    },
+    async () => {
         narration.dialogue = { text: `End` };
     },
 ]);
